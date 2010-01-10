@@ -1,0 +1,19 @@
+Spockz_Session:
+  tableName: sp_sessions
+  className: Spockz_Session_Model
+  columns:
+    id: 
+      primary: true
+      type: string(40)
+      notnull: true
+    ip_address:
+        type: string(32)
+        ip: true
+    user_agent: string(200)
+    last_activity: integer
+    userdata: array
+    flashdata: array
+    salt:
+      type: string(80)
+      notnull: true
+      unique: true
