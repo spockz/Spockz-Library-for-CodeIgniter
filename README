@@ -1,0 +1,58 @@
+README For Spockz' CodeIgniter Libraries
+========================================
+:author: Alessandro Vermeulen
+
+NOTE: See the LICENCE file for the licence.
+
+NOTE: This is a manual export of the SVN tree to github. It could happen that I
+      forget something. Please don't get mad and report an issue. I'll fix it as
+      soon as possible. :)
+
+Install
+-------
+
+1. Export or clone the library to 'APPPATH/libraries/Spockz'
+2. Export or clone the helpers to 'APPPATH/helpers/Spockz'
+3. Create a new config file 'spockz.php' or copy the one in the repository.
+
+Doctrine
+~~~~~~~~
+The 'Spockz/Session/Driver/Doctrine.php' library has a dependency on Doctrine.
+However, it does not load it or something. It assumes (but checks) whether there
+is a `Spockz_Session_Model' class and when it exists it will load and function
+properly. Otherwise you'll get an assertion error. It also assumes that you have
+setup Doctrine correctly and everything. :)
+
+Usage
+-----
+Currently not every library is as stable as they should be. And they are mostly
+specific to my situation. So you could find yourself in the situation that a
+library will not work for you. The ones that work, or should work, are:
+
+* Spockz_Cache
+* Spockz_Session
+* Spockz_OpenID
+
+Spockz_Cache
+~~~~~~~~~~~~
+
+Spockz_Session
+~~~~~~~~~~~~~~
+
+Spockz_OpenID
+~~~~~~~~~~~~~
+
+Examples
+--------
+In my very big messy SVN tree there are some tests / controllers flying around
+that I used to test my libraries. These controllers can be found here:
+http://projects.spockz.nl/svn/doctrinecodeigniter/application/controllers/ and
+their corresponding views here:
+http://projects.spockz.nl/svn/doctrinecodeigniter/application/views.
+
+Tests
+-----
+Currently there are no UNIT or other tests available to test my libraries. And
+at the moment I do not deem it likely that I will create them in the near
+future. In case you like me to help with the unit tests, you're welcome and I'd
+be glad to be of assistance. :)
